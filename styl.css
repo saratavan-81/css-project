@@ -1,0 +1,519 @@
+#header{
+    background-color: gray;
+    color: blue;
+}
+
+/* hello rocket */
+.color-blueviolet{
+    color: blueviolet;
+}
+.backgroun-yellow{
+    background-color: yellow;
+}
+
+.color-blueviolet.backgroun-yellow{
+    font-weight: bold;
+}
+
+/* #header1.bold{
+    font-weight: bold;
+
+} */
+
+/* div.backgroun-yellow{
+    font-weight: bold;
+} */
+
+/* .color-red{
+    color: red;
+} */
+
+/* header .color-red{
+    font-weight: bold;
+} */
+
+/* header div .color-green{
+    font-weight: bold;
+} */
+
+/* .color-green{
+    color: green;
+} */
+/* 
+a[href]{
+    color: pink;
+} */
+
+/* a[href="https://roocket.ir/"] {
+
+    font-weight: bold;
+    color: purple;
+} */
+
+/* a[href *="example"]{
+    color: red;
+
+} */
+
+/* a[href$="org"]{
+    color: yellow;
+} */
+
+/* li[class ="iti"] a{
+    color:purple;
+
+} */
+
+/* li  > span{
+    background-color: chartreuse;
+} */
+
+/* li + span{
+    background-color: yellow;
+} */
+
+/* li.iti + span {
+    background-color: teal;
+} */
+
+/* li.iti ~ span {
+    background-color:teal;
+} */
+
+li :hover{
+    background-color: cadetblue;
+}
+
+li :hover  a{
+    color: white;
+}
+
+ul li :first-child a {
+  background-color: tomato;
+}
+
+ul li :first-child  {
+    color: brown;
+
+  }
+
+  li ::before{
+      content: "befor";
+      color: blue;
+  }
+
+  li ::after{
+      content: "after";
+      color: red;
+  }
+
+  p::first-letter{
+      font-weight: bold;
+  }
+
+  p::first-line{
+      font-weight: bold;
+  } 
+  p.pading{
+      background-color: red;
+      /* padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px; */
+
+      padding: 10px 10px 10px 10px;
+
+      /* border-width: 5px;
+      border-style: solid;
+      border-color: black; */
+
+      border: 5px solid black;
+
+
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      margin-left: 30px;
+
+      width: 400px;
+      height: 200px;
+  }
+
+  p.img{
+      /* background-color: yellow; */
+      width: 100%;
+      background: url(./img/1.jpg)  0 40% / cover no-repeat border-box padding-box fixed yellow ;       /*جاشون مهم نیست و اولیتی  برای جاشون نیست !*/
+      /* background-image: url(./img/1.jpg);
+      background-size: cover;
+      background-position: 0 40%;
+      background-repeat: no-repeat; */
+      height: 400px;
+
+      border: 10px dashed green;
+      box-sizing: border-box;
+      /* background-origin: border-box;
+      background-clip:padding-box;
+      background-attachment: fixed; */
+  }
+
+  #gradient{
+    background:linear-gradient(to right,rgba(41,128,185,.2),rgba(26,188,156,.5)), url(./img/1.jpg)  0 40% / cover no-repeat border-box padding-box fixed  ;       /*جاشون مهم نیست و اولیتی  برای جاشون نیست !*/
+
+      width: 100%;
+      height: 400px;
+      border: 10px dashed green;
+      box-sizing: border-box;
+      /* background: radial-gradient(red ,blue 50% , green 20%,yellow); */
+      /* background: radial-gradient(rgb(123, 226, 192.8) ,rgb(103, 103, 202)80%); */
+      /* background: linear-gradient(to right, #ffd89b, #19547b); */
+
+
+  }
+
+  #filter{
+
+    background: url(./img/1.jpg)  0 40% / cover  fixed  ; 
+    width: 100%;
+    height: 400px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    filter:blur(5px);/* میزان شفافیت و تار بودن*/
+    filter: brightness(50%);/*تاریکی و روشنایی صفحه*/
+    filter: contrast(150%);/*درجه رنگی رو بیشتر میکند */
+    filter: drop-shadow(10px 10px 9px rgba(0,0,0,.5));/*سایه میندازه*/
+
+
+  }
+
+  #filter:hover{
+      filter: blur(0);
+  }
+
+  #img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  #fontfamily{
+      font-family:serif;
+ 
+  }
+  #vaziri{
+      font-family:noon;
+
+  }
+ 
+  .span{
+      background-color: rgb(44, 168, 162);
+      color: white;
+      padding: 1.2rem 2rem;
+      text-align: center;
+      border-radius: 6px;
+
+  }
+
+  header,
+  section,
+  aside,
+  footer{
+      margin: 0 1.5rem  2rem;
+  }
+
+  body{
+      padding-top: 2rem;
+  }
+  section{
+      float: left;
+      width: 55%;
+
+  }
+  aside{
+      float: right;
+      width: 38%;
+
+  }
+
+  .clearflx:after,
+  .clearflx:before{
+      content: "";
+      display: table;
+  }
+  .clearflx:after{
+      clear: both;
+  }
+
+  .span2{
+      background-color: rgb(125, 224, 195);
+      text-align: center;
+      padding: 2rem 0rem;
+      color: white;
+
+  }
+
+  .cantent1{
+      float: right;
+      /* width:  calc(66.66% - 1rem);
+      margin-right: 1rem; */
+      width: 100%;
+      margin-bottom: 1rem;
+
+  }
+
+  @media (min-width : 768px){
+      .cantent1{
+             width:  calc(66.66% - 1rem);
+      margin-right: 1rem;
+
+      }
+
+  }
+  
+
+
+
+
+  .aside1{
+      float: left;
+      /* width: 33.33%; */
+      width: 100%;
+      vertical-align: top;
+
+  }
+
+  @media (min-width : 768px){
+    .aside1{
+          width: 33.33%;
+
+
+    }
+
+}
+
+
+
+
+  .clearflx1:after,
+  .clearflx1:before{
+      content: "";
+      display: table;
+
+  }
+
+  .clearflx1:after{
+      clear: both;
+  }
+
+  .c1{
+      margin-bottom: 1.2rem;
+  }
+
+  .cantent1 .box{
+      height: 200px;
+      background: rgb(9, 68, 65);
+      margin: .5rem;
+      float: left;
+      /* width: calc(33.33% - 1rem); */
+      width: calc(100% - 1rem);
+      
+  }
+
+
+  @media (min-width : 768px){
+    .content1 .box{
+              width: calc(33.33% - 1rem);
+
+
+
+    }
+
+}
+
+  
+
+  .about{
+      float: right;
+      /* width: 33.33%; */
+      width: 100%;
+      margin-bottom: 1rem;
+      
+  }
+
+  @media (min-width : 768px){
+    .about{
+      width: 33.33%;
+
+
+
+    }
+
+}
+
+  .contact{
+      float: left;
+      /* width:calc(66.66% - 1rem);
+      margin-right: 1rem; */
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  @media (min-width : 768px){
+    .contact{
+             width:calc(66.66% - 1rem);
+      margin-right: 1rem;
+    }
+
+}
+
+  .clearflx2:after,
+  .clearflx2:before{
+
+    content: "";
+    display: table;
+
+  }
+
+  .clearflx2:after{
+      clear: both;
+  }
+
+
+.conteinerform{
+    width: 1200px;
+    margin: 0 auto;
+}
+.form{
+    margin-top: 2rem;
+}
+
+.form .form-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 1rem;
+
+}
+
+.form label,
+.form input:not([type="checkbox"]){
+    display: block;
+    margin-bottom: .7rem;
+}
+
+.form label{
+    font-weight: bold;
+
+}
+
+.form input.form-control{
+    width: 100%;
+    padding: .6rem .6rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 12px; /* برای اینکه دور کادر من حلال بشه*/ 
+}
+
+.form input.form-control::placeholder{
+    color: rgb(25, 167, 20);
+}
+
+.form input.form-control::-moz-placeholder{
+    color: rgb(25, 167, 20);
+}
+
+.form input.form-control::-webkit-input-placeholder{
+    color: rgb(25, 167, 20);
+}
+
+.checkbox{
+    position: relative;
+    padding-right: 2.1rem;
+    padding-top: .4rem;
+}
+
+.checkbox input{
+    display: none;
+
+
+}
+
+.checkbox .checkmark{
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 4px;
+
+
+}
+
+.checkbox:hover .checkmark{
+    background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark{
+    background-color: blue;
+
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    top: 5px;
+    right: 8px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .checkmark::after{
+    display: block;
+}
+
+.form input:focus{
+    background-color: rgb(179, 218, 223);
+    outline: none;
+    border: 1px solid rgb(18, 15, 207) !important;
+}
+
+/* .form input.invaliad, */
+.form input:invalid
+{
+    background-color: rgb(241, 185, 185);
+    border: 1px solid rgb(236, 152, 152) !important;
+}
+
+.but{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.but-green{
+    background-color: rgb(70, 233, 70);
+    border: 1px solid green;
+
+
+
+}
+
+.but-red{
+    background-color: rgb(228, 137, 137);
+    color: white;
+    border: 1px solid red;
+
+
+}
+
+#h222{
+    background-color: red;
+}
+
+
+  
+
+ 
+

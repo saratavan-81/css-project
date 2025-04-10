@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./styl.css">
+</head>
+<body>
+
+    <div class="conteinerform">
+
+    <form class="form" action="#">
+
+        <h2 class="form-title"> فرم ثبت نام</h2>
+        <label for="name">نام</label><br>
+        <input type=" text" name="name" id="name" class="form-control " placeholder="لطفا نام خود را وارد کنید" required>
+
+        <label for="email">ایمیل</label><br>
+        <input type=" email" name="email" id="email" class="form-control" placeholder="لطفا ایمیل خود را وارد کنید ">
+
+        <label for="password">پسورد</label><br>
+        <input type=" password" name="password" id="password" class="form-control" placeholder="لطفا پسورد را وارد کنید" minlength="3">
+
+        <label for="password2">تکرار پسورد</label><br>
+        <input type=" password2" name="password2" id="password2" class="form-control" placeholder="تکرار پسورد"><br>
+
+        <label for="rules" class="checkbox"> 
+            <input type="checkbox" name="rules" id="rules"> قوانین را قبول دارم
+            <span class="checkmark"></span>
+        </label><br>
+
+      <button class="but but-green">ثبت نام</button>
+      <button class="but but-red">ثبت نام</button>
+
+        
+
+    </form>
+</div>
+
+
+
+
+    <hr>
+    <a href="./index.html"> go to index page</a>
+    
+</body>
+</html>
